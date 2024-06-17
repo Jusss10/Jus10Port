@@ -13,10 +13,12 @@ const config: Config = {
 				"115vh": "115vh",
 			},
 			fontFamily: {
-				tiny5: ['Oswald'],
+				tiny5: ["Oswald"],
 			},
 		},
 	},
-	plugins: [],
+	plugins: [
+	
+	],
 };
 export default config;

@@ -7,13 +7,13 @@ import { Projects } from "@/components/Projects";
 
 
 export default function Home() {
-	return(
-	<main className="flex justify-center items-center ">
-		<div className="w-full">
-			<Hero />
-			<About />
-			<Projects />
-		</div>
-	</main>
+	return (
+		<main className="flex justify-center items-center scrollbar-hide ">
+			<div className="w-full scrollbar-hide">
+				<Hero />
+				<About />
+				<Projects />
+			</div>
+		</main>
 	);
 }
