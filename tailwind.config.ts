@@ -10,15 +10,14 @@ const config: Config = {
 		extend: {
 			height: {
 				"150vh": "150vh",
-				"115vh": "115vh",
+				"60vh": "60vh",
 			},
 			fontFamily: {
-				tiny5: ["Oswald"],
+				display: ["Oswald"],
+				tiny1: ['"Open Sans"'],
 			},
 		},
 	},
-	plugins: [
-	
-	],
+	plugins: [],
 };
 export default config;

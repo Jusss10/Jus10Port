@@ -1,7 +1,7 @@
 import React, { useEffect, useState } from "react";
 
 const RadialGradient: React.FC<{
-	containerRef: React.RefObject<HTMLDivElement>;
+	containerRef: React.RefObject<HTMLDivElement> | null;
 }> = ({ containerRef }) => {
 	const [mousePosition, setMousePosition] = useState({ x: 50, y: 50 });
 
@@ -16,15 +16,22 @@ const RadialGradient: React.FC<{
 			setMousePosition({ x: mouseXpercentage, y: mouseYpercentage });
 		};
 
-		document.addEventListener("mousemove", handleMouseMove);
+		if (containerRef) {
+			document.addEventListener("mousemove", handleMouseMove);
+		}
 
 		return () => {
-			document.removeEventListener("mousemove", handleMouseMove);
+			if (containerRef) {
+				document.removeEventListener("mousemove", handleMouseMove);
+			}
 		};
-	}, []);
+	}, [containerRef]);
+
+	
 
 	const gradientStyle: React.CSSProperties = {
-		background: `radial-gradient(circle at ${mousePosition.x}% ${mousePosition.y}%, #e288e9, #a9eefc)`,
+		maskImage: `radial-gradient(circle at ${mousePosition.x}% ${mousePosition.y}%, transparent 50%, black 100%)`,
+		WebkitMaskImage: `radial-gradient(circle at ${mousePosition.x}% ${mousePosition.y}%, transparent 50%, black 100%)`,
 		position: "absolute",
 		width: "100%",
 		height: "100%",

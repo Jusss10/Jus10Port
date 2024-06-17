@@ -29,12 +29,13 @@ const Hero = () => {
 	}, []);
 
 	return (
-		<div className="relative h-screen overflow-hidden">
+		<div className="relative h-[70vh] overflow-hidden">
 			<RadialGradient containerRef={container} />
-			<div className="absolute top-20 left-0 w-full h-full">
+			<div className="absolute left-0 w-full h-full">
 				<div ref={container} className="h-[150vh] pb-20 pt-26 relative">
-					<Slide direction="left" left="-40%" progress={scrollYProgress} />
-					<Slide direction="right" left="-25%" progress={scrollYProgress} />
+					<p className=""> PORTFOLIO JUSTINE DOR</p>
+					<Slide direction="left" left="-20%" progress={scrollYProgress} />
+					<Slide direction="right" left="-50%" progress={scrollYProgress} />
 					<Slide direction="left" left="-75%" progress={scrollYProgress} />
 				</div>
 			</div>

@@ -12,16 +12,17 @@ const Slide: React.FC<SlideProps> = ({ direction, left, progress }) => {
 	const translateX = useTransform(
 		progress,
 		[0, 1],
-		[150, -150].map((v) => v * directionMultiplier)
+		[400, -400].map((v) => v * directionMultiplier)
 	);
 
 	return (
 		<motion.div
 			style={{ x: translateX, left }}
 			className="relative flex whitespace-nowrap">
-			<Phrase />
-			<Phrase />
-			<Phrase />
+			<Phrase/>
+			<Phrase/>
+			<Phrase/>
+			<Phrase/>
 		</motion.div>
 	);
 };

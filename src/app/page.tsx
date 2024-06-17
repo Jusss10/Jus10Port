@@ -12,6 +12,7 @@ export default function Home() {
 			<div className="w-full scrollbar-hide">
 				<Hero />
 				<About />
+				<Hero />
 				<Projects />
 			</div>
 		</main>
