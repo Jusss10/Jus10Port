@@ -3,6 +3,7 @@ import { motion } from "framer-motion";
 import { useInView } from "react-intersection-observer";
 import Image from "next/image";
 import profilePic from "./profile.png";
+import { BsLinkedin, BsGithub, BsTelegram } from "react-icons/bs";
 
 interface Skill {
 	name: string;
@@ -34,7 +35,7 @@ const About: React.FC = () => {
 			initial={{ opacity: 0, y: 50 }}
 			animate={{ opacity: 1, y: 0 }}
 			transition={{ duration: 0.5 }}
-			className="bg-black relative h-screen pb-20 pt-26 flex items-center justify-center"
+			className="bg-black relative h-screen pb-20 pt-26 flex flex-col items-center justify-center"
 			ref={ref}>
 			<div className="flex flex-col md:flex-row items-center md:items-start md:space-x-8 w-full max-w-5xl px-4">
 				<div className="mb-8 md:mb-0 md:w-1/2 flex flex-col items-center">
@@ -64,6 +65,20 @@ const About: React.FC = () => {
 						</div>
 					))}
 				</div>
+			</div>
+			<div className="flex justify-center mt-20 space-x-8">
+				<a
+					href="https://www.linkedin.com/in/justine-dor-390437201/"
+					target="_blank"
+					rel="noopener noreferrer">
+					<BsLinkedin className="text-5xl text-white" />
+				</a>
+				<a
+					href="https://github.com/Jusss10"
+					target="_blank"
+					rel="noopener noreferrer">
+					<BsGithub className="text-5xl text-white" />
+				</a>
 			</div>
 		</motion.div>
 	);
