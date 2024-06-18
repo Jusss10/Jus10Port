@@ -22,6 +22,7 @@
     "react-scroll": "^1.9.0",
     "simple-icons": "^12.3.0",
     "split-text-js": "^1.0.3",
+    "styled-components": "^6.1.11",
     "tailwind-merge": "^2.3.0",
     "tailwind-scrollbar-hide": "^1.1.7"
   },
