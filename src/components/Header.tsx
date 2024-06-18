@@ -1,7 +1,7 @@
 import React from "react";
 import "animate.css";
 
-export function CoolComponent(){
+const Header = () => {
 	return (
 		<div className="flex flex-col items-center justify-center p-10 ">
 			<p className="text-[8vw] arapey-regular animate__animated animate__fadeInDown leading-none bg-gradient-to-r from-blue-300 to-pink-500">
@@ -13,3 +13,5 @@ export function CoolComponent(){
 		</div>
 	);
 };
+
+export default Header;

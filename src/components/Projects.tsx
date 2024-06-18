@@ -1,11 +1,17 @@
-import { BentoGridDemo } from "./BentoGridDemo";
+import React from "react";
+import ProjectsList from "./ProjectList";
 
-export function Projects() {
+const Projects = () => {
 	return (
-		<div className=" bg-sky-200 relative h-[150vh] pb-20 pt-26 scrollbar-hide">
-			<div className="relative z-10 flex items-center justify-center h-full">
-				<BentoGridDemo />
+		<div className="bg-sky-200 pb-20 pt-20 relative">
+			<p className="arapey-regular-italic text-5xl text-center bg-black rounded-full p-4">
+				My Projects
+			</p>
+			<div className="relative z-10 h-full pt-10">
+				<ProjectsList/>
 			</div>
 		</div>
 	);
-}
+};
+
+export default Projects;

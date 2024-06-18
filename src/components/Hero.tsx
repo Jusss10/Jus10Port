@@ -1,5 +1,4 @@
 import React, { useEffect, useRef, RefObject } from "react";
-import RadialGradient from "./RadielGradient";
 import { useScroll } from "framer-motion";
 import Lenis from "@studio-freight/lenis";
 import Slide from "@/components/Slide";
@@ -30,7 +29,6 @@ const Hero = () => {
 
 	return (
 		<div className="relative h-[70vh] overflow-hidden">
-			<RadialGradient containerRef={container} />
 			<div className="absolute left-0 w-full h-full">
 				<div ref={container} className="h-[150vh] pb-20 pt-26 relative">
 					<Slide direction="left" left="-100%" progress={scrollYProgress} />
