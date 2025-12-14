@@ -1,4 +1,3 @@
-import React from "react";
 
 export function Hobby() {
 	return (
@@ -13,7 +12,7 @@ export function Hobby() {
 					flexDirection: "column",
 					alignItems: "center",
 					justifyContent: "center",
-					height: "100vh", // Adjust height as needed for your layout
+					height: "100vh",
 				}}>
 				<iframe
 					title="Viking market - DAEVillages"
@@ -25,7 +24,7 @@ export function Hobby() {
 					width="640"
 					height="480"
 					src="https://sketchfab.com/models/d2c00cb9fa584dd6871a4a7cd8fd9b53/embed"
-					style={{ marginBottom: "10px" }} // Optional margin for spacing
+					style={{ marginBottom: "10px" }}
 				></iframe>
 				<p
 					style={{

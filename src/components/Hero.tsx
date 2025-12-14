@@ -1,10 +1,10 @@
-import React, { useEffect, useRef, RefObject } from "react";
+import { useEffect, useRef } from "react";
 import { useScroll } from "framer-motion";
-import Lenis from "@studio-freight/lenis";
+import Lenis from "lenis";
 import Slide from "@/components/Slide";
 
 const Hero = () => {
-	const container: RefObject<HTMLDivElement> = useRef(null);
+	const container = useRef<HTMLDivElement>(null);
 	const { scrollYProgress } = useScroll({
 		target: container,
 		offset: ["start end", "end start"],
